@@ -58,12 +58,12 @@ Person.prototype.toString = function(){
   return `${this.name}, ${this.age}`;
 }
 
-const Mary = new Person("Mary", 50);
-console.log(Mary.toString());
-mary.eat("pizza");
-console.log(Mary.stomach);
-mary.poop();
-console.log(mary.stomach);
+// const Mary = new Person("Mary", 50);
+// console.log(Mary.toString());
+// mary.eat("pizza");
+// console.log(Mary.stomach);
+// mary.poop();
+// console.log(mary.stomach);
 
 
 
@@ -104,7 +104,7 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy = favoriteToy;
  
 }
-Baby.prototype = Object.create(person.prototype);
+Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function(){
   return `Playing with ${this.favoriteToy}`;
 } 
